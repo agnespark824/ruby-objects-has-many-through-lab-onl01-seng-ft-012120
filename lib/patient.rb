@@ -22,6 +22,6 @@ class Patient
   end
   
   def doctors
-    Appointment.each {|appointment| appointment.doctor}
+    Appointment.map {|appointment| appointment.doctor}
   end
 end
