@@ -1,3 +1,5 @@
+require 'Pry'
+
 class Artist
   attr_accessor 
   attr_reader :name
