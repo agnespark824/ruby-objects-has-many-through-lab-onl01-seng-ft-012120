@@ -21,8 +21,8 @@ class Artist
   
   def songs
     Song.all.select {|song| song.artist == self}
-  binding.pry
   end
+  binding.pry
   
   def genres
     self.songs.each {|song| song.genre}
